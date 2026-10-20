@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- Document type declaration - tells the browser this is an HTML5 document -->
+<html lang="en">
+  <!-- Head section contains metadata, stylesheets, and other non-visible information -->
+  <head>
+    <!-- Character encoding for proper text display -->
+    <meta charset="UTF-8" />
+    <!-- Responsive viewport settings for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title shown in browser tab -->
+    <title>Google</title>
+
+    <!-- Preconnect to Google Fonts for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Load Roboto font family (Google's standard font) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Load Font Awesome icons library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- Load custom stylesheet for page styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- Body section contains all visible content -->
+  <body>
+    <!-- Header section - contains navigation links and user options -->
+    <header class="topbar">
+      <!-- Left navigation - links to Google informational pages -->
+      <nav class="left-nav" aria-label="Primary navigation">
+        <a href="#">About</a>
+        <a href="#">Store</a>
+      </nav>
+
+      <!-- Right navigation - user-related links and settings -->
+      <nav class="right-nav" aria-label="Profile navigation">
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+
+        <!-- Google Apps grid icon (9-dot menu) -->
+        <div class="apps" aria-label="Google apps">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Sign in button -->
+        <button type="button" class="signin-btn">Sign in</button>
+      </nav>
+    </header>
+
+    <!-- Main content area - centered on page -->
+    <main class="page-center">
+      <!-- Search section containing Google logo and search functionality -->
+      <section class="search-section" aria-label="Google search">
+        <!-- Google logo image -->
+        <img src="logo-google-transparent-background-png.png" alt="Google logo" class="logo" />
+
+        <!-- Search box container with search icon, input, and voice search -->
+        <div class="search-box" role="search">
+          <!-- Magnifying glass search icon -->
+          <span class="search-icon" aria-hidden="true">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <!-- Search input field -->
+          <input type="search" aria-label="Search Google" />
+          <!-- Voice search microphone icon -->
+          <img src="Google_microphone_logo.png" alt="Search by voice" class="icon" />
+        </div>
+
+        <!-- Search action buttons -->
+        <div class="buttons">
+          <button type="button">Google Search</button>
+          <button type="button">I'm Feeling Lucky</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section - contains legal and additional links -->
+    <footer class="footer">
+      <!-- Left side footer links -->
+      <nav class="footer-left" aria-label="Advertising and business links">
+        <a href="#">Advertising</a>
+        <a href="#">Business</a>
+        <a href="#">How Search works</a>
+      </nav>
+
+      <!-- Right side footer links -->
+      <nav class="footer-right" aria-label="Legal links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Settings</a>
+      </nav>
+    </footer>
+  </body>
+</html>
